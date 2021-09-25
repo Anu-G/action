@@ -1,5 +1,7 @@
 name: GitHub Actions Pull
-on: [opened]
+on:
+  pull_request:
+    types: [opened]
 jobs:
   test:
     runs-on: ubuntu-latest
